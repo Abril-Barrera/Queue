@@ -26,6 +26,18 @@ public:
 	bool isFull();
 };
 
+// Funcion para revisar si la cola esta vacia 
+bool queue::isEmpty()
+{
+	return (size() == 0);
+}
+
+// Funcion para revisar si la cola esta llena o no
+bool queue::isFull()
+{
+	return (size() == capacity);
+}
+
 // Constructor to initialize queue
 queue::queue(int size)
 {
